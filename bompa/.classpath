@@ -2,5 +2,17 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/ibxm.jar"/>
+	<classpathentry kind="lib" path="lib/jogg-0.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/jorbis-0.0.15.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_util_applet.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl.jar" sourcepath="lib/docs&amp;src/lwjgl-src-2.9.1.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/bompa/lib/doc&amp;src/lwjgl-docs-2.9.1.zip!/javadoc"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="bompa/lib/native"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/slick-util.jar" sourcepath="lib/docs&amp;src/slick-util-src.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

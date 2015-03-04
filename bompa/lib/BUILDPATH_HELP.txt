@@ -1,0 +1,17 @@
+Add jars in here to build path and specify the following by 
+cascading the named .jar file and inserting the texts within 
+quotations to corresponding fields.
+
+lwjgl.jar
+	Source attachment - Workspace Location
+			*				 Path: "/bompa/lib/docs&src/lwjgl-src-2.9.1.zip"
+	Javadoc location - Javadoc in archive - Workspace file
+			* 		 Archive path: "bompa/lib/docs&src/lwjgl-docs-2.9.1.zip"
+			* Path within archive: "javadoc"
+	Native library location
+			*	    Location path: "bompa/lib/native"
+	
+	
+slick-util.jar:
+	Source attachment - Workspace Location
+			*				 Path: "/bompa/lib/docs&src/slick-util-src.zip"
