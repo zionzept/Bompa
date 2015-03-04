@@ -87,6 +87,14 @@ public class Square {
 		} glEnd();
 	}
 	
+	public double getX(){
+		return x;
+	}
+	
+	public double getY(){
+		return y;
+	}
+	
 	
 	
 }
