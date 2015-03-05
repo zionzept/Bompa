@@ -24,16 +24,13 @@ public class Game {
 		
 		sq = new Square(500, 100, 60);
 		TrackingMover mov2 = new TrackingMover(sq);
-		mov2.setRotationTrackingEntity(mouse);
-		mov2.setRotationTrackingMode(TrackingMover.ROTATION_LOOK_AT);
+		mov2.setRotationTracking(mouse, TrackingMover.ROTATION_LOOK_AT);
 		entities.add(sq);
 		
 		sq = new Square(0, 0, 30);
 		mov2 = new TrackingMover(sq);
-		mov2.setMovementTrackingEntity(mouse);
-		mov2.setRotationTrackingEntity(entities.getLast());
-		mov2.setMovementTrackingMode(TrackingMover.MOVEMENT_FOLLOW);
-		mov2.setRotationTrackingMode(TrackingMover.ROTATION_COPY);
+		mov2.setMovementTracking(mouse, TrackingMover.MOVEMENT_FOLLOW);
+		mov2.setRotationTracking(entities.getLast(), TrackingMover.ROTATION_COPY);
 		entities.add(sq);
 	}
 	

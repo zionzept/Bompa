@@ -50,7 +50,6 @@ public class GLMain {
 	private static void looper() {
 		lastT = System.nanoTime();
 		while(running) {
-			//Display.sync(FPS);
 			glClear(GL_COLOR_BUFFER_BIT);
 			loop();
 			Display.update();
@@ -70,7 +69,6 @@ public class GLMain {
 	
 	private static void loop() {
 		double dt = deltaTime();
-		System.out.println(dt);
 		game.update(dt);
 		game.render();
 	}

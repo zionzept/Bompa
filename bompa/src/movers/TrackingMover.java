@@ -4,6 +4,7 @@ import entities.Entity;
 
 public class TrackingMover extends Mover {
 
+	public static final int NONE = 0;
 	public static final int MOVEMENT_FOLLOW = 1;
 	public static final int ROTATION_COPY = 1, ROTATION_LOOK_AT = 2;
 
@@ -16,21 +17,23 @@ public class TrackingMover extends Mover {
 	public TrackingMover(Entity entity) {
 		super(entity);
 	}
-
-	public void setMovementTrackingEntity(Entity entity) {
-		movementTracking = entity;
-	}
-
-	public void setRotationTrackingEntity(Entity entity) {
-		rotationTracking = entity;
-	}
 	
-	public void setMovementTrackingMode(int mode) {
+	public void setMovementTracking(Entity entity, int mode) {
 		movementTrackingMode = mode;
+		if (mode == NONE) {
+			movementTracking = null;
+		} else {
+			movementTracking = entity;
+		}
 	}
 	
-	public void setRotationTrackingMode(int mode) {
+	public void setRotationTracking(Entity entity, int mode) {
 		rotationTrackingMode = mode;
+		if (mode == NONE) {
+			rotationTracking = null;
+		} else {
+			rotationTracking = entity;
+		}
 	}
 
 	@Override
